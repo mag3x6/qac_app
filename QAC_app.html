@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>QAC</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+        <meta charset="utf-8">
+
+
+        <script type="text/javascript">
+   		var ww = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    	var wh = window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
+						
+        function onBodyLoad(){       
+			if(navigator.onLine) {
+				//alert(wh);
+				var cartas_pg = document.getElementById("cartas_pg"); 
+				//cartas_pg.innerHTML = '<div id="cartas_pg"><iframe width='+ (ww-25) +'px" height='+ (wh-25) +'px" scrolling="no" align="middle" frameborder="0" src="portada.html"></iframe></div>';
+				cartas_pg.innerHTML = '<div id="cartas_pg"><iframe width='+ (ww-25) +'px" height='+ (wh-25) +'px" scrolling="no" align="middle" frameborder="0" src="http://anymaecuador.260mb.net/portada.html"></iframe></div>';
+			} else {
+				alert("Esta aplicación requiere coneccion a internet");
+			}
+		}
+        </script>
+    </head>
+
+
+<body onload="onBodyLoad()">
+    <div id="cartas_pg">
+	
+	</div>
+</body>
+
+</html>
+
